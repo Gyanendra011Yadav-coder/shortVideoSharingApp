@@ -1,0 +1,2 @@
+rootProject.name = "shortVideoSharingApp"
+include ':app'
