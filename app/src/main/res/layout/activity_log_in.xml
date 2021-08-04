@@ -108,6 +108,8 @@
         app:layout_constraintStart_toStartOf="@+id/logInButton"
         app:layout_constraintTop_toBottomOf="@+id/logInButton"
         app:layout_constraintVertical_bias="0.36">
+        android:textAlign="center"
+        android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
