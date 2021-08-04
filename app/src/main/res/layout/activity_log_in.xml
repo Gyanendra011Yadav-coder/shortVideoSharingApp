@@ -8,19 +8,10 @@
     tools:context=".LogInActivity">
 
     <TextView
-        android:id="@+id/textView3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="329dp"
         android:layout_height="75dp"
-        android:text="     Log in"
+        android:text="     Login"
         android:textColor="?attr/colorOnBackground"
         android:textSize="60sp"
         android:textStyle="bold"
@@ -41,7 +32,7 @@
         android:drawableLeft="@drawable/ic_person"
         android:drawablePadding="15dp"
         android:ems="10"
-        android:hint="UserName"
+        android:hint="UserName/Email"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingTop="20dp"
@@ -58,10 +49,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_security"
         android:drawablePadding="15dp"
         android:ems="10"
-        android:hint="email_Id"
+        android:hint="password"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingTop="20dp"
@@ -75,6 +66,22 @@
         app:layout_constraintTop_toBottomOf="@+id/inputUserName"
         app:layout_constraintVertical_bias="0.056"
         tools:ignore="Autofill,HardcodedText,LabelFor,RtlHardcoded,TextFields" />
+
+    <TextView
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/design_default_color_surface"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        app:layout_constraintVertical_bias="0.01999998"
+        tools:ignore="HardcodedText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
