@@ -74,7 +74,7 @@
         android:text="Forgot Password?"
         android:textColor="@color/design_default_color_surface"
         android:textSize="16sp"
-        android:textStyle="normal"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/inputEmail"
         app:layout_constraintHorizontal_bias="0.98"
@@ -98,31 +98,76 @@
         app:layout_constraintTop_toBottomOf="@+id/inputEmail"
         app:layout_constraintVertical_bias="0.19999999"
         tools:ignore="HardcodedText" />
+
     <LinearLayout
-        android:layout_width="321dp"
-        android:layout_height="59dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="319dp"
+        android:layout_height="36dp"
         android:layout_marginBottom="92dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/logInButton"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="@+id/logInButton"
         app:layout_constraintTop_toBottomOf="@+id/logInButton"
-        app:layout_constraintVertical_bias="0.36">
+        app:layout_constraintVertical_bias="0.13"
+        tools:ignore="ExtraText">
         android:textAlign="center"
         android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't Have An Account? "
+            android:text="                Don't Have An Account? "
+
+            android:textColor="@color/design_default_color_on_secondary"
             tools:ignore="HardcodedText" />
+
+        added the
+
         <TextView
+            android:id="@+id/signUpTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  SignUp"
+            android:text="    SignUp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.28" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
