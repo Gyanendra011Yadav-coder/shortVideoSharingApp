@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShortVideoSharingApp">
-        <activity android:name=".LogInActivity"></activity>
+        <activity
+            android:name=".login2Activity"
+            android:exported="true"
+            android:label="@string/title_activity_login2"
+            android:theme="@style/Theme.ShortVideoSharingApp.NoActionBar" />
+        <activity android:name=".LogInActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
