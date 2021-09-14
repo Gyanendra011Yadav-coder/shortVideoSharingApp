@@ -2,7 +2,10 @@ package com.example.shortvideosharingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -17,8 +20,8 @@ public class RegisterActivity extends AppCompatActivity {
         //settting up the set on click listner
         button.setOnClickListner(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                startActivity(new Intent(RegisterActivity.this, LogInActivity.class));
             }
-        })
+        });
     }
 }
