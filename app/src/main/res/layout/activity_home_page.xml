@@ -34,32 +34,145 @@
         app:layout_constraintVertical_bias="0.01999998" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/followingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Following "
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintEnd_toEndOf="@+id/homePageVideoView"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.022" />
 
-    <TextView
-        android:id="@+id/videoTittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Killer Short Video App"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/homePageVideoView"
+    <LinearLayout
+        android:layout_width="138dp"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84000003"
-        tools:ignore="DuplicateIds" />
+        app:layout_constraintVertical_bias="0.86"
+        tools:ignore="MissingConstraints">
+
+        <!--THIS TEXT IS USING TO SHOW THE TITTLE OF THE VIDEO.(UPPER-ONE) -->
+        <TextView
+            android:id="@+id/videoTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:shadowDx="0dp"
+            android:shadowDy="0dp"
+            android:shadowRadius="15dp"
+            android:text="Killer Shots"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="573dp" />
+
+        <!-- THIS TEXT VIEW IS USED TO ADD THE DESCRIPION OF THE VIDEO -->
+        <TextView
+            android:id="@+id/videoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:shadowDx="0dp"
+            android:shadowDy="0dp"
+            android:shadowRadius="15dp"
+            android:text="Killer Shots"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="573dp" />
+
+    </LinearLayout>
+    <!--THIS, LINEAR LAYOUT IS TO ADD LIKE,COMMENT AND PROFILE BUTTONS-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="70dp"
+        android:layout_height="292dp"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ic_baseline_share_24"
+            android:layout_width="47dp"
+            android:layout_height="76dp"
+            android:layout_gravity="end"
+            android:color="@color/white"
+            android:padding="0dp"
+            android:src="@drawable/ic_baseline_share_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581" />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="69dp"
+            android:layout_gravity="end"
+            android:padding="0dp"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581" />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="69dp"
+            android:layout_gravity="end"
+            android:padding="0dp"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581" />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="80dp"
+            android:layout_gravity="end"
+            android:padding="0dp"
+            android:src="@drawable/ic_baseline_person_pin_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
