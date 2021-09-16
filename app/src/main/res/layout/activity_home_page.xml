@@ -8,6 +8,8 @@
     tools:context=".homePage">
 
     <!-- This, is VideoView Of The Activity-->
+
+    <!-- This, is adding text on the screen Named as "Trending"-->
     <VideoView
         android:id="@+id/homePageVideoView"
         android:layout_width="wrap_content"
@@ -20,7 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <!-- This, is adding text on the screen Named as "Trending"-->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -177,12 +178,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.581" />
+    </LinearLayout>
 
-
-
-
-
-
+    <LinearLayout
+        android:id="@+id/linearLayout43"
+        android:layout_width="70dp"
+        android:layout_height="292dp"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints">
 
     </LinearLayout>
 
