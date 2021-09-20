@@ -35,7 +35,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01999998" />
+        app:layout_constraintVertical_bias="0.01999998"
+        tools:ignore="HardcodedText" />
 
     <!--This is Adding the text On The Screen Named As "Following"-->
     <TextView
@@ -50,7 +51,8 @@
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:layout_width="138dp"
@@ -83,7 +85,7 @@
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
-            tools:ignore="DuplicateIds,MissingConstraints"
+            tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,SpUsage"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="573dp" />
 
@@ -102,7 +104,7 @@
             android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
-            tools:ignore="DuplicateIds,MissingConstraints"
+            tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,SpUsage"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="573dp" />
 
@@ -135,7 +137,8 @@
             app:layout_constraintHorizontal_bias="0.962"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.581" />
+            app:layout_constraintVertical_bias="0.581"
+            tools:ignore="ContentDescription" />
 
         <!--This,is adding Button To Like The Videos As It is Heart On The Screen.-->
         <ImageView
@@ -149,7 +152,8 @@
             app:layout_constraintHorizontal_bias="0.962"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.581" />
+            app:layout_constraintVertical_bias="0.581"
+            tools:ignore="ContentDescription" />
 
         <!--This, is adding Comment Button On The Screen.-->
         <ImageView
@@ -163,7 +167,8 @@
             app:layout_constraintHorizontal_bias="0.962"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.581" />
+            app:layout_constraintVertical_bias="0.581"
+            tools:ignore="ContentDescription" />
         <!--This,is adding Share Button On Th Screen.-->
         <ImageView
             android:id="@+id/ic_baseline_share_24"
@@ -178,7 +183,8 @@
             app:layout_constraintHorizontal_bias="0.962"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.581" />
+            app:layout_constraintVertical_bias="0.581"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <LinearLayout
@@ -194,6 +200,7 @@
         app:layout_constraintTop_toTopOf="@+id/homePageVideoView"
         app:layout_constraintVertical_bias="0.976"
         tools:ignore="MissingConstraints">
+
 
     </LinearLayout>
 
