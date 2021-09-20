@@ -187,6 +187,7 @@
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
+    <!-- This, Layout is Responsible for Adding Views At The Bottom of the screen-->
     <LinearLayout
         android:id="@+id/linearLayout43"
         android:layout_width="413dp"
@@ -200,6 +201,22 @@
         app:layout_constraintTop_toTopOf="@+id/homePageVideoView"
         app:layout_constraintVertical_bias="0.976"
         tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="72dp"
+            android:layout_gravity="end"
+            android:color="@color/white"
+            android:padding="0dp"
+            android:src="@drawable/ic_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581"
+            tools:ignore="ContentDescription" />
+
 
 
     </LinearLayout>
