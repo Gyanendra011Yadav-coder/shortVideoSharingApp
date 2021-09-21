@@ -202,6 +202,8 @@
         app:layout_constraintVertical_bias="0.976"
         tools:ignore="MissingConstraints">
 
+
+        <!--This will be adding the home button at the bottom in the linear layout-->
         <ImageView
             android:layout_width="47dp"
             android:layout_height="72dp"
@@ -216,7 +218,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.581"
             tools:ignore="ContentDescription" />
+        <!--This will be adding the search or discover at the buttom in the linear layout.
 
+        -->
+        <ImageView
+
+            android:layout_width="47dp"
+            android:layout_height="72dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription"/>
 
 
     </LinearLayout>
