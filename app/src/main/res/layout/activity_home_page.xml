@@ -110,8 +110,10 @@
 
     </LinearLayout>
     <!--THIS, LINEAR LAYOUT IS TO ADD LIKE,COMMENT AND PROFILE BUTTONS-->
+
+    <!-- This, Layout is Responsible for Adding Views At The Bottom of the screen-->
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayoutSide"
         android:layout_width="70dp"
         android:layout_height="292dp"
         android:layout_gravity="end"
@@ -119,10 +121,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.769"
+        app:layout_constraintVertical_bias="0.605"
         tools:ignore="MissingConstraints">
 
         <!--This, is Resposible for showing the user's Profile On The Home Page.-->
@@ -187,13 +189,10 @@
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
-    <!-- This, Layout is Responsible for Adding Views At The Bottom of the screen-->
     <LinearLayout
-        android:id="@+id/linearLayout43"
+        android:id="@+id/linearLayoutBottom"
         android:layout_width="413dp"
         android:layout_height="57dp"
-        android:layout_gravity="end"
-        android:gravity="end"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/homePageVideoView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -204,12 +203,16 @@
 
 
         <!--This will be adding the home button at the bottom in the linear layout-->
+        <!--This will be adding the search or discover at the buttom in the linear layout.
+
+        -->
         <ImageView
-            android:layout_width="47dp"
+            android:layout_width="59dp"
             android:layout_height="72dp"
-            android:layout_gravity="end"
             android:color="@color/white"
-            android:padding="0dp"
+            android:padding="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
             android:src="@drawable/ic_home"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -218,65 +221,80 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.581"
             tools:ignore="ContentDescription" />
-        <!--This will be adding the search or discover at the buttom in the linear layout.
 
-        -->
         <ImageView
-            android:layout_width="47dp"
+            android:layout_width="58dp"
             android:layout_height="72dp"
-            android:layout_gravity="end"
+            android:padding="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
             android:src="@drawable/ic_search"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="ContentDescription"/>
+            tools:ignore="ContentDescription" />
         <!--This, will be adding Searh Button At the Linear Layout At the Bottom of The App-->
         <ImageView
-            android:layout_width="47dp"
+            android:layout_width="57dp"
             android:layout_height="72dp"
-            android:layout_gravity="end"
+            android:padding="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
             android:src="@drawable/ic_baseline_add_box_24"
-            android:padding="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.962"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.581"
-            tools:ignore="ContentDescription"
-            />
+            tools:ignore="ContentDescription" />
         <!--This,will be adding Inbox or Chat Button at the bottom,in the LinearLayout-->
-        <ImageView
-            android:layout_width="47dp"
-            android:layout_height="72dp"
-            android:layout_gravity="end"
-            android:src="@drawable/ic_baseline_chat_24"
-            android:padding="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.962"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.581"
-            tools:ignore="ContentDescription"
-            />
         <!--Adding contact button in the Linear Layout at the buttom of the HOme -->
+
         <ImageView
-            android:layout_width="47dp"
+            android:layout_width="55dp"
             android:layout_height="72dp"
-            android:gravity="end"
-            android:src="@drawable/ic_person"
-            android:padding="0dp"
+            android:padding="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/ic_baseline_chat_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.962"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.581"
-            tools:ignore="ContentDescription"
-            />
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="72dp"
+            android:padding="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:src="@drawable/ic_person"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581"
+            tools:ignore="ContentDescription" />
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="15dp"
+        android:layout_height="641dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/homePageVideoView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
